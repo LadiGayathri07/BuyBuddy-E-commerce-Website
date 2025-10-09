@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BuyBuddy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+    <header class="bg-white shadow p-4 flex flex-col sm:flex-row sm:justify-between gap-4 sm:items-center">
+        <h1 class="text-2xl font-bold text-pink-600">BuyBuddy</h1>
+
+        <div class="flex flex-col sm:flex-row items-center gap-2 w-full sm:w-auto">
+            <input type="text" id="search" placeholder="Search products..." class="border p-2 rounded w-full sm:w-64" />
+
+            <select id="category-filter" class="border p-2 rounded">
+                <option value="all">All Categories</option>
+                <option value="Clothing">Clothing</option>
+                <option value="Accessories">Accessories</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Fitness">Fitness</option>
+                <option value="Home Decor">Home Decor</option>
+                <option value="Beauty">Beauty</option>
+                <option value="Footwear">Footwear</option>
+                <option value="Kitchen">Kitchen</option>
+            </select>
+
+
+            <a href="cart.html" class="relative ml-2">
+                <span id="cart-count"
+                    class="absolute -top-2 -right-2 bg-red-500 text-white text-xs px-2 rounded-full">0</span>
+                🛒 Cart
+            </a>
+        </div>
+    </header>
+
+
+    <main class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-6 bg-gray-100 min-h-screen">
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

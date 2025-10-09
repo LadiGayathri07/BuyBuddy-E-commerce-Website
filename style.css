@@ -1,0 +1,17 @@
+/* style.css */
+
+/* Use this for any custom overrides or enhancements */
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+button:hover {
+    opacity: 0.9;
+    transition: all 0.3s ease;
+}
+
+/* Utility class to add smooth shadow effect */
+.shadow-smooth {
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
